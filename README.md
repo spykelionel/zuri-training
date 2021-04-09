@@ -1,1 +1,2 @@
-# zuri-training
+# Google-Clone
+![](./assets/screenshot.png)
