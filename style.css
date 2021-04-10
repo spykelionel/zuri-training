@@ -1,4 +1,3 @@
-
 /* variables */
 /* font faces */
 
@@ -11,11 +10,45 @@
 }
 
 header {
-  background: #333;
+  background: rgb(206, 200, 200);
   width: 100%;
   height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 5px 5px -5px #333;
 }
 header img {
-  background-color: tomato;
+  /* background-color: tomato; */
   width: 20px;
+}
+
+main {
+}
+
+main .card {
+}
+
+.card .header {
+}
+
+.card .content {
+}
+
+main .about {
+}
+
+.about .info {
+}
+
+.info h3 {
+}
+
+.info p {
+}
+
+.info ul.tag {
+}
+
+ul.tag li {
 }
