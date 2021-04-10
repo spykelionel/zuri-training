@@ -1,5 +1,26 @@
 /* variables */
+:root {
+  --primary: rgb(114, 192, 218);
+  --secondary: rgb(26, 60, 211);
+  --tertiary: rgb(214, 212, 212);
+  --base: rgb(15, 13, 13);
+  --success: green;
+  --fav: turquoise;
+}
+
 /* font faces */
+@font-face {
+  font-family: 'roboto-bold';
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: 'roboto-reg';
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'ubuntu-medium';
+  src: url(fonts/Ubuntu-Medium.ttf);
+}
 
 * {
   box-sizing: border-box;
@@ -7,23 +28,40 @@
   margin: 0;
   list-style-type: none;
   outline-style: none;
+  color: var(--base);
 }
 
 header {
-  background: rgb(206, 200, 200);
+  background: var(--fav);
   width: 100%;
   height: 10%;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid var(--primary);
   box-shadow: 0 5px 5px -5px #333;
+}
+
+header h2 {
+  color: var(--secondary);
+  font-family: 'roboto-bold';
+  letter-spacing: 3px;
+}
+.social a {
+  padding: 5px;
+}
+.social a#img2 img {
+  background: #fff;
 }
 header img {
   /* background-color: tomato; */
-  width: 20px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 main {
+
 }
 
 main .card {
