@@ -1,34 +1,13 @@
-/* .box {
-  height: 150px;
-  width: 300px;
-  margin: 20px;
-  border: 1px solid #ccc;
-}
 
-.top {
-  box-shadow: 0 -5px 5px -5px #333 ;
-}
-
-.right {
-  box-shadow: 5px 0px 5px -5px #333 ;
-}
-
-.bottom {
-  box-shadow: 0 5px 5px -5px #333 ;
-}
-
-.left {
-  box-shadow: -5px 0 5px -5px #333 ;
-}
-
-.all {
-  box-shadow: 0 0 15px #333 ;
-} */
+/* variables */
+/* font faces */
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none;
+  outline-style: none;
 }
 
 header {
