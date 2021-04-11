@@ -1,2 +1,2 @@
-# Google-Clone
-![](./assets/screenshot.png)
+# My CV
+![](./screenshot.png)
