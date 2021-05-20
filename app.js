@@ -13,6 +13,7 @@ console.log(temp);
 
 console.log('')
 console.log('')
+
 // test checkisgiyu.
 console.log("Testing checkYuGiYu")
 let n = checkYuGiOh(10);
