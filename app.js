@@ -1,3 +1,31 @@
+
+
+// Test temperature conversion
+console.log("Testing temperature conversion")
+let temp = convertFahrToCelcius(33.4);
+console.log(temp);
+temp = convertFahrToCelcius([]);
+console.log(temp);
+temp = convertFahrToCelcius({ temp: 23 });
+console.log(temp);
+temp = convertFahrToCelcius("this is a string");
+console.log(temp);
+
+console.log('')
+console.log('')
+// test checkisgiyu.
+console.log("Testing checkYuGiYu")
+let n = checkYuGiOh(10);
+console.log(n);
+n = checkYuGiOh("fizzbuzz is meh");
+console.log(n);
+n = checkYuGiOh("33");
+console.log(n);
+n = checkYuGiOh([]);
+console.log(n);
+n = checkYuGiOh(22.5);
+console.log(n);
+
 // convert from farheinheit to celcius
 
 function convertFahrToCelcius(n) {
@@ -6,7 +34,7 @@ function convertFahrToCelcius(n) {
     let num = parseFloat(n);
     let temp = 0;
     if (Array.isArray(n)) {
-        return (`${n.length>0? '[' + n + ']' : "[]"} is not a valid number but an array`);
+        return (`${n.length > 0 ? '[' + n + ']' : "[]"} is not a valid number but an array`);
     }
 
     if (isNaN(num)) {
@@ -22,17 +50,16 @@ function convertFahrToCelcius(n) {
     return (temp.toFixed(4) + " deg C");
 }
 
-// let n = convertFahrToCelcius(33.4);
-// console.log(n);
 
-function checkYuGiOh(n){
+// function checkYuGiOh
+function checkYuGiOh(n) {
     word = '';
     list = [];
 
-    if(!Number.isSafeInteger(n)){
-        return ( `invalid paramenter: ${ '"'+n+'"'}` );
+    if (!Number.isSafeInteger(n)) {
+        return (`invalid paramenter: ${'"' + n + '"'}`);
     }
-    for(i=1; i<=n; i++){
+    for (i = 1; i <= n; i++) {
         if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
             word = "yu-gi-oh";
             list.push(word);
@@ -61,6 +88,3 @@ function checkYuGiOh(n){
     }
     return list;
 }
-
-let n = checkYuGiOh("fizzbuzz is meh");
-console.log(n);
